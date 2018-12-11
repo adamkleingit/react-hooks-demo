@@ -10,7 +10,7 @@ export const useFormField = (path, initialValue) => {
     setValue(path, initialValue);
 
     return () => setValue(path, undefined);
-  });
+  }, []);
 
   return {
     value,

@@ -18,15 +18,11 @@ export const useActions = (...actions) => {
   return actions.map(action => (...args) => store.dispatch(action(...args)));
 };
 
-const firstTime = Symbol("firstTime");
-
 export const useSelector = (selectorFn, ...args) => {
   const store = useStore();
-  let [curResult, setCurResult] = useState(firstTime);
-
-  if (curResult === firstTime) {
-    curResult = selectorFn(store.getState(), ...args);
-  }
+  let [curResult, setCurResult] = useState(() =>
+    selectorFn(store.getState(), ...args)
+  );
 
   useEffect(() => {
     return store.subscribe(() => {
