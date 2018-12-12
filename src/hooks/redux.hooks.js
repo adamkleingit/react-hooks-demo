@@ -18,15 +18,13 @@ export const useActions = (...actions) => {
   return actions.map(action => (...args) => store.dispatch(action(...args)));
 };
 
-export const useSelector = (selectorFn, ...args) => {
+export const useSelector = selectorFn => {
   const store = useStore();
-  let [curResult, setCurResult] = useState(() =>
-    selectorFn(store.getState(), ...args)
-  );
+  let [curResult, setCurResult] = useState(() => selectorFn(store.getState()));
 
   useEffect(() => {
     return store.subscribe(() => {
-      const nextResult = selectorFn(store.getState(), ...args);
+      const nextResult = selectorFn(store.getState());
 
       if (nextResult !== curResult) {
         curResult = nextResult; // for this function closure
