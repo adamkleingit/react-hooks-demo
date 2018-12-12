@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 
 import { selectFormValue } from "../selectors/forms.selectors";
-import { setValue } from "../actions/forms.actions";
+import * as formActions from "../actions/forms.actions";
 
 class Home extends React.Component {
   componentDidMount() {
@@ -46,5 +46,5 @@ const mapStateToProps = state => ({
 });
 export default connect(
   mapStateToProps,
-  { setValue }
+  { setValue: formActions.setValue }
 )(Home);

@@ -1,12 +1,14 @@
 Toggle
-  useState
-  take out to external function
-  move to file
+  useState - update react version
+  move to Toggle
+  put "+" : "-" - export useToggleState
   show uncontrolled
 
 Redux
-  show implementation
-  show usage inside component
+  show Home.classes - redux devtools
+  show action and selector inside component just for email
+  show redux-hooks implementation
+  show useEffect
   take out to generic function
   put in form hooks
   hooks will replace selectors - useCurrentUser. Decoupled from redux
