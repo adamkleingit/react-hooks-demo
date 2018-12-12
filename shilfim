@@ -1,0 +1,12 @@
+Toggle
+  useState
+  take out to external function
+  move to file
+  show uncontrolled
+
+Redux
+  show implementation
+  show usage inside component
+  take out to generic function
+  put in form hooks
+  hooks will replace selectors - useCurrentUser. Decoupled from redux
