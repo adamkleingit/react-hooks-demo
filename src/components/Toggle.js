@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 
 export const Toggle = ({ title, isOpen, setIsOpen, children }) => (
   <Fragment>
@@ -11,5 +11,11 @@ export const Toggle = ({ title, isOpen, setIsOpen, children }) => (
     {isOpen ? children : null}
   </Fragment>
 );
+
+export const useToggleState = initialIsOpen => {
+  const [isOpen, setIsOpen] = useState(initialIsOpen);
+
+  return { isOpen, setIsOpen };
+};
 
 export default Toggle;
