@@ -7,7 +7,7 @@ export default () => {
 
   return (
     <div className="login-form">
-      <form>
+      <form className="panel">
         <input {...emailField} placeholder="Your email address" type="email" />
         <input {...passwordField} placeholder="Your password" type="password" />
         <button>login</button>
