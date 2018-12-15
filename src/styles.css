@@ -2,7 +2,11 @@ h1,
 p {
   font-family: Lato;
 }
-
+nav a {
+  margin-right: 10px;
+  cursor: pointer;
+  color: #333;
+}
 /*
 Credit on form style to Aigars Silkalns:
 https://codepen.io/colorlib/pen/rxddKy
@@ -15,7 +19,7 @@ https://codepen.io/colorlib/pen/rxddKy
   padding: 8% 0 0;
   margin: auto;
 }
-form {
+.panel {
   position: relative;
   z-index: 1;
   background: #ffffff;

@@ -20,7 +20,7 @@ class Home extends React.Component {
 
     return (
       <div className="login-form">
-        <form>
+        <form className="panel">
           <input
             value={email}
             onChange={e => setValue("user.email", e.target.value)}
