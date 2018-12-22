@@ -2,10 +2,30 @@ h1,
 p {
   font-family: Lato;
 }
-nav a {
+nav span {
   margin-right: 10px;
   cursor: pointer;
   color: #333;
+}
+.video-page {
+  height: 1000px;
+}
+video {
+  position: absolute;
+  width: 400px;
+  top: 50px;
+  right: 10px;
+  transition: 200ms linear all;
+}
+.minimized {
+  position: fixed;
+  width: 100px;
+  left: auto;
+  top: 0;
+  right: 0;
+}
+.invalid {
+  border: 1px solid red;
 }
 /*
 Credit on form style to Aigars Silkalns:

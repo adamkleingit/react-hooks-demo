@@ -1,7 +1,6 @@
-import React, { memo } from "react";
+import React from "react";
 
-export default memo(() => {
-  console.log("render");
+const Home = () => {
   return (
     <div className="login-form">
       <form className="panel">
@@ -11,4 +10,5 @@ export default memo(() => {
       </form>
     </div>
   );
-});
+};
+export default Home;

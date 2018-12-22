@@ -1,14 +1,60 @@
-Toggle
-  useState - update react version
-  move to Toggle
-  put "+" : "-" - export useToggleState
-  show uncontrolled
+useState
+  play/pause on video click
+  setIsPlaying with function
+  useFlag custom hook
+  move to common.hooks
 
-Redux
-  show Home.classes - redux devtools
-  show action and selector inside component just for email
-  show redux-hooks implementation
-  show useEffect
-  take out to generic function
-  put in form hooks
-  hooks will replace selectors - useCurrentUser. Decoupled from redux
+useEffect
+  set up ref
+  set up effect to play/pause movie
+  set up value state to demonstrate problem
+  pass in array
+
+teardown
+  setup event listener on scroll
+  show []
+  useState to control isScrolled
+  throttle
+  extract to useDetectScroll
+
+Controlled
+  extract to component
+  can't control component
+  extract ref and state to useVideoState
+  add play/pause button
+
+lazy + Suspense
+  setup pages
+  copy nav from index
+  fallback=Spinner
+  setTimeout
+  show going back and forth - already cached
+
+memo
+  add input
+  show video re-renders
+  add memo
+  still re-renders
+  useCallback
+
+useMemo
+  add inputs to home
+  add email validity
+  show count
+  useMemo
+
+
+// Toggle
+//   useState - update react version
+//   move to Toggle
+//   put "+" : "-" - export useToggleState
+//   show uncontrolled
+
+// Redux
+//   show Home.classes - redux devtools
+//   show action and selector inside component just for email
+//   show redux-hooks implementation
+//   show useEffect
+//   take out to generic function
+//   put in form hooks
+//   hooks will replace selectors - useCurrentUser. Decoupled from redux
